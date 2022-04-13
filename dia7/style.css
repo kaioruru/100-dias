@@ -1,0 +1,227 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 107, 1);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+#corpo{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(71, 70, 70);
+    border-radius: 15px;
+    box-shadow: 0 0 35px black;
+}
+header{
+    position: absolute;
+    background-color: rgb(10, 116, 255);
+    width: 100%;
+    height: 16%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px ;
+    box-shadow: 0 10px 100px black;
+}
+#titulo{
+    font-size: 400%;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    z-index: 6;
+}
+#opições{
+    position: absolute;
+    width: 10%;
+    height: 60%;
+    top: 20%;
+    left: 3%;
+    z-index: 7;
+}
+#reta1{
+    position: absolute;
+    width: 80%;
+    height: 13%;
+    background-color:rgb(71, 70, 70);
+    border-radius: 6px;
+    margin-top: 5px;
+    left: 10%;
+    bottom: 25%;
+}
+#reta2{
+    position: absolute;
+    width: 50%;
+    height: 13%;
+    background-color:rgb(71, 70, 70);
+    border-radius: 6px;
+    margin-top: 5px;
+    left: 10%;
+    top: 25%;
+}
+#bolinha1{
+    width: 29%;
+    height: 32%;
+    background-color:rgb(71, 70, 70) ;
+    border-radius: 300px;
+    position: absolute;
+    top: 22%;
+    right: 8%;
+}
+#pesquisar{
+    position: absolute;
+    color:rgb(71, 70, 70);
+    font-size: 80px;
+    top: 25%;
+    right: 4%;
+    z-index: 8;
+}
+#texto{
+    position: absolute;
+    top: 20%;
+    font-size: 50px;
+    left: 15%;
+    z-index: 9;
+}
+#nome1{
+    margin-bottom: 65px;
+}
+#nome2{
+    margin-bottom: 65px;
+}
+#nome3{
+    margin-bottom: 65px;
+}
+#linha{
+    position: absolute;
+    width: 2%;
+    height: 84%;
+    background-color: black;
+    bottom: 0;
+    left: 7%;
+}
+.bolinha{
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    background-color: rgb(71, 70, 70);
+    left: 5.5%;
+    z-index: 10;
+}
+#circulo1{
+    top: 27%;
+}
+#circulo2{
+    top: 55%;
+}
+#circulo3{
+    bottom: 8%;
+}
+.bolinha1{
+    position: absolute;
+    z-index: 11;
+    left: 4%;
+}
+#quadradinho1{
+    border: 15px solid blue;
+    width: 5%;
+    height: 5%;
+    border-radius: 60px;
+    top: 28%;
+}
+#quadradinho2{
+    border: 15px solid blue;
+    width: 5%;
+    height: 5%;
+    border-radius: 60px;
+    top: 56%;
+}
+#quadradinho3{
+    border: 15px solid blue;
+    width: 5%;
+    height: 5%;
+    border-radius: 60px;
+    bottom: 9%;
+}
+#opição{
+    width: 400px;
+    height: 950px;
+    background-color: rgb(40, 114, 212);
+    position: absolute;
+    z-index: 144;
+    top: 2.5%;
+    right: 100%;
+    border-top-left-radius: 20px;
+    border-end-start-radius: 20px ;
+    z-index: 3;
+    opacity: 0;
+}
+ul{
+    position: absolute;
+    top: 2%;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    font-size: 65px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+a:hover{
+    color: rgb(73, 73, 243);
+    transition: 0.3s;
+}
+#nome1:hover{
+    color: rgb(73, 73, 243);
+    transition: 0.3s;
+}
+#nome2:hover{
+    color: rgb(73, 73, 243);
+    transition: 0.3s;
+}
+#nome3:hover{
+    color: rgb(73, 73, 243);
+    transition: 0.3s;
+}
+#botão{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    background-color: white;
+    z-index: 90;
+    opacity: 0;
+    top: 0.5%;
+    left: 0.5%;
+}
+input{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    border-radius: 30px;
+    bottom: 105%;
+    font-size: 30px;
+    right: 0;
+    opacity: 0;
+}
+#botão2{
+    position: absolute;
+    width: 15%;
+    height: 88%;
+    background-color: white;
+    z-index: 90;
+    top: 5%;
+    right: 0.5%;
+    opacity: 0;
+}

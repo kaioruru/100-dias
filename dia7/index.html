@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ágenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="corpo">
+        <header>
+            <div id="opições">
+                <div id="reta1"></div>
+                <div id="reta2"></div>
+                <div id="bolinha1"></div>
+            </div>
+            <h1 id="titulo">Notifications</h1>
+            <div id="pesquisar"><ion-icon name="search-outline"></ion-icon></div>
+            <input id="input" type="text">
+            <div id="botão2"></div>
+        </header>
+        <section>
+            <div id="efeito">
+                <div class="bolinha" id="circulo1"></div>
+                <div class="bolinha" id="circulo2"></div>
+                <div class="bolinha" id="circulo3"></div>
+                <div class="bolinha1" id="quadradinho1"></div>
+                <div class="bolinha1" id="quadradinho2"></div>
+                <div class="bolinha1" id="quadradinho3"></div>
+                <div id="linha"></div>
+            </div>
+            <div id="texto">
+                <div id="nome1"><h1 class="hora" id="hora1">9:24 AM</h1><p class="texto" id="t1"><b>John Walker</b> posted a photo on <br> your wall.</p></div>
+                <div id="nome2"><h1 class="hora" id="hora2">8:19</h1><p class="texto" id="t2"><b>Alice Parker</b> commented <br> your last post.</p></div>
+                <div id="nome3"><h1 class="hora" id="hora3">Yesterday</h1><p class="texto" id="t3"><b>Luke Wayne</b> added you as <br> friend.</p></div>
+            </div>
+            <div id="opição">
+                <ul>
+                    <li><a href="#">Dashbord</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </section>
+        <div id="botão"></div>
+    </div>
+    <script>
+        var botão = document.getElementById('botão')
+        var botão2 = document.getElementById('botão2')
+        var opição1 = document.getElementById('opição')
+        botão2.addEventListener('click',clico2)
+        botão.addEventListener('click',clico)
+        var input = document.getElementById('input')
+        function clico(){
+            if (opição1.style.opacity == 0) {
+                opição1.style.opacity = 1           
+            } else {
+                opição1.style.opacity = 0
+            }
+        }
+        function clico2(){
+            if (input.style.opacity == 0) {
+                input.style.opacity = 1
+            } else{
+                input.style.opacity = 0
+            }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

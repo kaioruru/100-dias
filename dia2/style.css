@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+#tudo{
+    position:relative;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(132, 192, 41);
+    border-radius: 20px;
+
+}
+.barra{
+    margin: 20px;
+    width: 250px;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 10px 10px 34px rgb(97, 112, 75);
+}
+#tudo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#mover{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+
+}

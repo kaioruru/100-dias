@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#tudo{
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    width: 1000px;
+    background-image: linear-gradient(to right, rgb(48, 48, 250), rgb(48, 180, 48));
+    border-radius: 20px;
+    justify-content: baseline;
+    align-items: center;
+}
+.numero{
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    height: 33%;
+}
+#parte1{
+    border-radius: 15px;
+    position: absolute;
+    left: 33%;
+    top: 30px;
+    transform: rotate(40deg);
+    height: 40%;
+    width: 55px;
+    background-color: black;
+    z-index: 3;
+}
+#parte2{
+    position: absolute;
+    height: 90%;
+    width: 60px;
+    background-color: black;
+    border-radius: 15px;
+    top: 9%;
+    left: 45%;
+    z-index: 4;
+    box-shadow: 50px 0 90px;
+    
+}
+.zero{
+    position: absolute;
+    border: 60px solid rgb(83, 83, 83);
+    border-radius: 400px;
+
+}
+.numero1{
+    position: relative;
+    display: inline-block;
+    width: 18%;
+    height: 18%;
+    z-index: 2;
+}
+#zero1{
+    top: 30px;
+    right: 150px;
+    box-shadow: 50px 0 90px;
+    box-shadow: inset 40px 0 90px, 50px 0 90px;
+}
+#zero2{
+    top: 30px;
+    right: 200px;
+    z-index: 1;
+    box-shadow: 50px 0 90px;
+    box-shadow: inset 40px 0 90px, 50px 0 90px;
+}
+h1{
+    font-size: 130px;
+    display: flex;
+    position: relative;
+    top: -340px;
+    left: 320px;
+    color: whitesmoke;
+    font-weight: 100;
+    text-shadow: 50px 0 30px black;
+}
+h2{
+    display: flex;
+    position: relative;
+    top :-345px;
+    left: 300px;
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 50px 0 30px black;
+    font-weight: 100;
+}

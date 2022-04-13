@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#caixa{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 2%;
+    filter: contrast(10);
+
+}
+#bola{
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    top: 30%;
+    left: 30%;
+    filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+
+}
+.bolinha{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 0;
+}
+.bolona{
+    position: absolute;
+    width:  60%;
+    height: 60%;
+    border-radius: 50%;
+    top: 31%;
+    left: 30%;
+    background-color: rgb(0, 0, 0);
+
+}
+$i: 0;
+@function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+  
+    @return $randomNum;
+  }
+@for $i from 1 to 10 {
+    $tamanho: randomNum(10%,40% );
+    #n#{$i} {
+        width: $tamanho ;
+        height: $tamanho;
+        top: randomNum(20%, 60%);
+        left: randomNum(20%, 60%);
+        animation: animaçao#{$i} #{$i +1 }s infinite linear;
+    }
+    $tamanho : $tamanho + 2%;
+}
+$e: 0;
+@for $e from 1 to 10 {
+    $tras: randomNum(270, 290);
+    $rota: randomNum(0,360);
+    @keyframes animaçao#{$e}{
+        0%{
+            transform: rotate(0deg) translateX(0);
+        }
+        50%{
+            transform: rotate($rota+deg) translateX($tras+px);
+        }
+        100%{
+            transform: rotate($rota*2+deg) translateX(0);
+        }
+    }
+    $rota: $rota +9px 
+}
+$b: 0; 
+$distancia:10%;
+@for $b from 1 to 3 {
+    #b#{$b}{
+        left: $distancia;
+        top: $distancia;
+        animation: animaçaobolona#{$b} #{$b +1 }s infinite linear;
+    }
+    $distancia: $distancia +25%;
+}
+$z: 0;
+@for $z from 1 to 3 {
+    $rotaçao: randomNum(10%,20% );
+    @keyframes animaçaobolona#{$z} {
+        0%{
+            transform: rotate(0deg) translateX($rotaçao);
+        }
+        100%{
+            transform: rotate(360deg) translateX($rotaçao);
+        }
+    }
+}

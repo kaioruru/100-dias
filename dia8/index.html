@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div id="caixa">
+            <div id="bola">
+            </div>
+        </div>
+    </section>
+    <script>
+        var bala = document.getElementById('bola')
+        for (var i = 0; i <10 ; i++){
+             var bolinha = document.createElement('div')
+             document.getElementById('bola').appendChild(bolinha)
+             bolinha.id = 'n'+i
+             bolinha.className= 'bolinha'
+        }
+        for (var x = 0; x <3; x++){
+            var bolona = document.createElement('div')
+            document.getElementById('bola').appendChild(bolona)
+            bolona.id = 'b'+x
+            bolona.className= 'bolona'
+        }   
+    </script>
+</body>
+</html>

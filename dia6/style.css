@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+section{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(184, 119, 0);
+    border-radius: 20px;
+}
+#tudo{
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    border-radius: 20px;
+    box-shadow: 0 0 40px black;
+}
+#rodo{
+    position: absolute;
+    clip-path: circle(50%);
+    width: 25%;
+    top: 10%;
+    left: 20%;
+    z-index: 40;
+}
+#rodinha{
+    width: 35%;
+    height: 35%;
+    background-color: rgb(39, 39, 39);
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    z-index: 5;
+    border-radius: 400px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animação{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+#circulo{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 11%;
+    left: 11%;
+    border: 5px solid gray;
+    border-radius: 50%;
+    z-index: 6;
+}
+#quadrado{
+    position: absolute;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 120px solid rgb(39, 39, 39);
+    top: 30%;
+    z-index: 7;
+
+}
+#quadrado2{
+    position: absolute;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 120px solid rgb(39, 39, 39);
+    top: 30%;
+    right: 0;
+    z-index: 7;
+}
+h1{
+    position: absolute;
+    font-size: 350%;
+    top: 38%;
+    left: 21%;
+    color: whitesmoke;
+    z-index: 999;
+}
+h2{
+    position: absolute;
+    font-size: 250%;
+    top: 45%;
+    left: 26%;
+    color: whitesmoke;
+    z-index: 999;
+}
+
+#botão1{
+    position: absolute;    
+    width: 35%;
+    height: 10%;
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 50px;
+    top: 55%;
+    left: 15%;
+}
+#text1{
+    position: absolute;
+    font-size: 200%;
+    top: 30%;
+    left: 36%;
+    color: whitesmoke;
+}
+#botão2{
+    position: absolute;    
+    width: 35%;
+    height: 10%;
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 50px;
+    top: 70%;
+    left: 15%;
+}
+#text2{
+    position: absolute;
+    font-size: 200%;
+    top: 30%;
+    left: 36%;
+    color: whitesmoke;
+}
+#dado{
+    display: flex;
+    flex-direction: column;
+}
+.dados{
+    position: absolute;
+    background-color: rgb(44, 29, 0);
+    width: 35%;
+    height: 32%;
+    color: whitesmoke;
+}
+#dado1{
+    top: 1%;
+    right: 1%;
+    border-radius: 20px;
+}
+#dado2{
+    top: 34%;
+    right: 1%;
+    border-radius: 20px;
+}
+#dado3{
+    bottom: 1%;
+    right: 1%;
+    border-radius: 20px;
+}
+#texto1{
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+}
+#texto2{
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+}
+#texto3{
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+#n1{
+    font-size: 300%;
+    position: absolute;
+    top: 35%;
+    left: 38%;
+}
+#n2{
+    font-size: 300%;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+}
+#n3{
+    font-size: 300%;
+    position: absolute;
+    top: 35%;
+    left: 38%;
+}
+#botão1:hover{
+    background-color:rgb(54, 47, 33);
+    transition: 0.2s;
+}
+#botão2:hover{
+    background-color:rgb(54, 47, 33);
+    transition: 0.2s;
+}
+#dado1:hover{
+    background-color:rgb(66, 66, 66);
+    transition: 0.2s;
+}
+#dado2:hover{
+    background-color:rgb(66, 66, 66);
+    transition: 0.2s;
+}
+#dado3:hover{
+    background-color:rgb(66, 66, 66);
+    transition: 0.2s;
+}

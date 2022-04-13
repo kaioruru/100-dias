@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div id="tudo">
+            <div id="corpo">
+                <img id="rodo" src="https://i1.sndcdn.com/avatars-8RFW6lGoOizT7xKw-JDUmJA-t240x240.jpg" alt="rodo do poze">
+                <h1>mc poze</h1>
+                <h2>musico</h2>
+                <div id="rodinha">
+                    <div id="circulo"></div>
+                    <div id="quadrado"></div>
+                    <div id="quadrado2"></div>
+                </div>
+            </div>
+            <div id="botão1"><p id="text1">Follow</p></div>
+            <div id="botão2"><p id="text2">Message</p></div>
+            <div id="dados">
+                <div class="dados" id="dado1">
+                    <p id="texto1">Posts</p>
+                    <p id="n1">523</p>
+                </div>
+                <div class="dados" id="dado2">
+                    <p id="texto2">Likes</p>
+                    <p id="n2">1387</p>
+                </div>
+                <div class="dados" id="dado3">
+                    <p id="texto3">Follower</p>
+                    <p id="n3">146</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var rodinho = document.getElementById('rodo')
+        var roda = document.getElementById('rodinha')
+        rodinho.addEventListener('mouseenter', entro)
+        rodinho.addEventListener('mouseout',saiu)
+        function entro(){
+            roda.style.animationName = 'animação'
+        }
+        function saiu(){
+            roda.style.animationName =''
+        }
+    </script>
+</body>
+</html>
